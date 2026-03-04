@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    greenhouse-gas-fluxes-2026 (4.0.1)
+    greenhouse-gas-fluxes-2026 (4.0.4)
       jekyll (~> 4.3)
 
 GEM

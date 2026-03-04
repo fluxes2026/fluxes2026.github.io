@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["lorenzschmid@users.noreply.github.com"]
 
   spec.summary       = "Jekyll template for a conference website containing program, speaker, talks and room overview."
-  spec.homepage      = "https://github.com/DigitaleGesellschaft/greenhouse-gas-fluxes-2026/"
+  spec.homepage      = "https://github.com/halt9k/greenhouse-gas-fluxes-2026/"
   spec.license       = "MIT"
 
   spec.files         = begin

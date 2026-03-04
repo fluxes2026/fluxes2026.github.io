@@ -49,9 +49,9 @@ jobs:
         run: |
           npm install -g purgecss
           npm install -g terser
-      - name: Compress CSS with PurgeCSS
-        run: |
-          purgecss --config purgecss.config.js
+      # - name: Compress CSS with PurgeCSS
+      #   run: |
+      #     purgecss --config purgecss.config.js
       - name: Compress JavaScript with Terser
         run: |
           terser _site/assets/js/main.js --compress ecma=2015,top_retain=window.conference --mangle --comments false --output _site/assets/js/main.js

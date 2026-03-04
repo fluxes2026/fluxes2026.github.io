@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-conference"
+  spec.name          = "greenhouse-gas-fluxes-2026"
   spec.version       = "4.0.1"
   spec.authors       = ["Lorenz Schmid"]
   spec.email         = ["lorenzschmid@users.noreply.github.com"]
 
   spec.summary       = "Jekyll template for a conference website containing program, speaker, talks and room overview."
-  spec.homepage      = "https://github.com/DigitaleGesellschaft/jekyll-theme-conference/"
+  spec.homepage      = "https://github.com/DigitaleGesellschaft/greenhouse-gas-fluxes-2026/"
   spec.license       = "MIT"
 
   spec.files         = begin

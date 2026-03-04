@@ -39,10 +39,10 @@ jobs:
           cat > Gemfile << 'EOF'
           source "https://rubygems.org"
           gem "jekyll", "~> 4.0"
-          gem "jekyll-theme-conference", path: ".."
+          gem "greenhouse-gas-fluxes-2026", path: ".."
           EOF
           cat > _config.yml << 'EOF'
-          theme: jekyll-theme-conference
+          theme: greenhouse-gas-fluxes-2026
           collections:
             talks:
               output: true

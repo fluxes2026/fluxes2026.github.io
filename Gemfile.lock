@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-conference (4.0.1)
+    greenhouse-gas-fluxes-2026 (4.0.1)
       jekyll (~> 4.3)
 
 GEM
@@ -87,7 +87,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  jekyll-theme-conference!
+  greenhouse-gas-fluxes-2026!
 
 BUNDLED WITH
    2.7.1

@@ -53,7 +53,7 @@ jobs:
           echo ":rubygems_api_key: ${RUBYGEMS_API_KEY}" >> $HOME/.gem/credentials
           gem build *.gemspec
           gem push *.gem
-          mv *.gem jekyll-theme-conference.gem
+          mv *.gem greenhouse-gas-fluxes-2026.gem
 
       - name: Create Release and Upload Asset
         id: create_release
@@ -63,4 +63,4 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
-          files: jekyll-theme-conference.gem
+          files: greenhouse-gas-fluxes-2026.gem

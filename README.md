@@ -1,4 +1,4 @@
-# jekyll-theme-conference
+# greenhouse-gas-fluxes-2026
 
 ![Screenshot](screenshot.png)
 
@@ -80,7 +80,7 @@ This allows for easier installation and updating as you don't have to manage any
 1. Add the following to your `Gemfile`:
 
    ```ruby
-   gem "jekyll-theme-conference"
+   gem "greenhouse-gas-fluxes-2026"
    ```
 
 2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
@@ -92,12 +92,12 @@ This allows for easier installation and updating as you don't have to manage any
 3. Set the `theme` in your project's Jekyll `_config.yml` file:
 
    ```yaml
-   theme: jekyll-theme-conference
+   theme: greenhouse-gas-fluxes-2026
    ```
 
 4. Continue with the [_Setup_](#setup) section below to customize the theme and add content for your conference.
 
-To update the theme, run `bundle update jekyll-theme-conference`.
+To update the theme, run `bundle update greenhouse-gas-fluxes-2026`.
 
 ### Remote Theme Method
 
@@ -127,10 +127,10 @@ To install:
    bundle
    ```
 
-4. Add `remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v4.0.1"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+4. Add `remote_theme: "DigitaleGesellschaft/greenhouse-gas-fluxes-2026@v4.0.1"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
    ```yaml
-   remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v4.0.1"
+   remote_theme: "DigitaleGesellschaft/greenhouse-gas-fluxes-2026@v4.0.1"
    ```
 
 5. Continue with the [_Setup_](#setup) section below to customize the theme and add content for your conference.
@@ -1082,7 +1082,7 @@ If you want to modify this theme and see its changes on an existing project, sim
 
 ```ruby
 group :jekyll_plugins do
-  gem "jekyll-theme-conference", path: "../[path to your local theme]"
+  gem "greenhouse-gas-fluxes-2026", path: "../[path to your local theme]"
 end
 ```
 

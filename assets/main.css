@@ -393,10 +393,10 @@ h1,
     font-size: 2.0rem;
 }
 
-@media (max-width: 1200px){
+@media{
     h1,
         .h1 {
-        font-size: calc(1.375rem + 1.5vw);
+        font-size: clamp(1.5rem, 1.2rem + 1.0vw, 2.2rem);
     }
 }
 

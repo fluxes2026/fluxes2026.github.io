@@ -18109,7 +18109,7 @@ main {
 }
 
 .hero-image {
-	background: url("images/background_low_res.jpg") center/cover no-repeat;
+    /* background: url("images/background_low_res.jpg") center/cover no-repeat */
     background: url("images/background.jpg") center/cover no-repeat;
     position: relative;
     width: 100%;
@@ -18119,7 +18119,8 @@ main {
     box-sizing: border-box;
     margin-top: 0;
     padding: clamp(1rem, 6vh, 10rem) 1rem;
-    background-position: left 84% bottom 100%;
+    background-position-x: right 12%;
+    background-position-y: bottom;
 }
 
 .hero-text-container {

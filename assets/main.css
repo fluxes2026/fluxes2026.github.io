@@ -18110,17 +18110,15 @@ main {
 
 .hero-image {
     /* background: url("images/background_low_res.jpg") center/cover no-repeat */
-    background: url("images/background.jpg") center/cover no-repeat;
+    background: url("images/background.jpg") no-repeat fixed;
     position: relative;
     width: 100%;
-
     /* height: 60vh */
     min-height: 60vh;
     box-sizing: border-box;
     margin-top: 0;
     padding: clamp(1rem, 6vh, 10rem) 1rem;
-    background-position-x: right 12%;
-    background-position-y: bottom;
+    background-position-x: 91%;
 }
 
 .hero-text-container {

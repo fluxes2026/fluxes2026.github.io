@@ -18120,6 +18120,12 @@ main {
     padding: clamp(1rem, 6vh, 10rem) 1rem;
     background-position-x: 91%;
 }
+@media (min-width:1920px) {
+    .hero-image {
+        background-size: cover;
+    }
+}
+
 
 .hero-text-container {
     position: absolute;

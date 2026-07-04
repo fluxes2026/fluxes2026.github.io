@@ -18160,12 +18160,12 @@ main {
 .sponsor-grid {
     display: grid;
     grid-template-columns: repeat(3, auto);
-
-    /* gap: 2rem 3rem */
+    gap: 2rem 3rem;
     justify-content: center;
     text-align: center;
     align-items: start;
-    max-width: 960px;
+
+    /* max-width: 960px */
     margin: 0 auto;
 }
 
@@ -18180,13 +18180,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: clamp(0rem, 4vw, 4rem);
+    gap: clamp(0rem, 2vw, 4rem);
 }
 
 .sponsor-logos img {
     height: 120px;
     width: 120px;
-    object-fit: contain;
+    object-fit: cover;
     transition: transform 0.2s ease;
 }
 

@@ -5598,7 +5598,7 @@ a.badge-dark:focus,
 
 .alert-info {
     color: #062d34;
-    background-color: #d1ecf1;
+    background-color: #ebf0f8;
     border-color: #bee5eb;
 }
 
@@ -8429,7 +8429,7 @@ a.bg-dark:hover,
 
 .mb-2,
 .my-2 {
-    margin-bottom: .5rem !important;
+    margin-bottom: 0;
 }
 
 .ml-2,
@@ -17948,26 +17948,27 @@ main.container img {
 }
 
 .table {
-    table-layout: fixed;
-    width: auto;
+    /* table-layout: auto */
+    /* width: 98% */
 }
 
 .table th,
 .table td {
-    width: 245px;
-    min-width: 245px;
+    /* width: 170px */
+    /* min-width: 150px */
 }
 
 .table th.col-space,
 .table td.col-space {
-    width: 15px;
-    min-width: 15px;
+    width: 10px;
+    min-width: 5px;
 }
 
 .table th.col-title,
 .table td.col-title {
-    width: 70px;
-    min-width: 70px;
+    width: clamp(40px, 12em, 12em);
+
+    /* min-width: 50px */
 }
 
 .nav-pills .nav-link.active {
@@ -18205,4 +18206,9 @@ main {
 }
 
 a.nav.link.active {
+}
+
+sch-header {
+    background-color: white;
+    border-left: solid 4px #cce3bd;
 }

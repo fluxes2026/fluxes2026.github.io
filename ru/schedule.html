@@ -1,504 +1,59 @@
-<!DOCTYPE html>
-<html data-lt-installed="true" lang="en">
-<head>
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Потоки парниковых газов: актуальные вопросы современных исследований</title>
-    <meta content="" name="description">
-    <meta content="Greenhouse Gas Fluxes: Key Trends in Modern Research" property="og:site_name">
-    <meta content="Greenhouse Gas Fluxes: Key Trends in Modern Research" property="og:title">
-    <meta content="" property="og:description">
-    <meta content="website" property="og:type">
-    <link href="../assets/main.css" rel="stylesheet">
-    <link href="https://github.com/" rel="preconnect">
-    <style>/* cyrillic-ext */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    }
-
-    /* cyrillic */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-
-    /* vietnamese */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-    }
-
-    /* latin-ext */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WdhyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-
-    /* latin */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTn89ddpQ.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    /* cyrillic-ext */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    }
-
-    /* cyrillic */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-
-    /* vietnamese */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-    }
-
-    /* latin-ext */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WdhyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-
-    /* latin */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTn89ddpQ.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    /* cyrillic-ext */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    }
-
-    /* cyrillic */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-
-    /* vietnamese */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-    }
-
-    /* latin-ext */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WdhyyTn89ddpROi.woff2) format('woff2');
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-
-    /* latin */
-    @font-face {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTn89ddpQ.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    /* cyrillic-ext */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
-        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    }
-
-    /* cyrillic */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-
-    /* greek-ext */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
-        unicode-range: U+1F00-1FFF;
-    }
-
-    /* greek */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
-        unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-    }
-
-    /* math */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
-        unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
-    }
-
-    /* symbols */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
-        unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
-    }
-
-    /* vietnamese */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-    }
-
-    /* latin-ext */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-
-    /* latin */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    /* cyrillic-ext */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
-        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    }
-
-    /* cyrillic */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-
-    /* greek-ext */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
-        unicode-range: U+1F00-1FFF;
-    }
-
-    /* greek */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
-        unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-    }
-
-    /* math */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
-        unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
-    }
-
-    /* symbols */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
-        unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
-    }
-
-    /* vietnamese */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-    }
-
-    /* latin-ext */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-
-    /* latin */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-
-    /* cyrillic-ext */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
-        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-    }
-
-    /* cyrillic */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-    }
-
-    /* greek-ext */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
-        unicode-range: U+1F00-1FFF;
-    }
-
-    /* greek */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
-        unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-    }
-
-    /* math */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
-        unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
-    }
-
-    /* symbols */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
-        unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
-    }
-
-    /* vietnamese */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-    }
-
-    /* latin-ext */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
-        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-
-    /* latin */
-    @font-face {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-stretch: 100%;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }</style>
-</head>
-<body class="pb-4" style="padding-top: 76px;">
-<header>
-    <!-- navigation bar (web only): -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light mb-3">
-        <div class="container">
-            <div class="navbar-brand navbar-logo mr-0 ml-1 text-left overflow-hidden">
-                <a href=""> </a>
-            </div>
-            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../en/schedule.html" title="English"><b>English</b></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../ru/schedule.html" title="Русский"><b>Русский</b></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.html" title="Main">Главная</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="active nav-link" href="schedule.html" title="Schedule">Программа</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="location.html" title="Location">Расположение</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="registration.html" title="Register">Регистрация<br></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <script>
+<!DOCTYPE html> 
+<html data-lt-installed="true" lang="en"> 
+    <head> 
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"> 
+        <meta charset="utf-8"> 
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+        <title>Потоки парниковых газов: актуальные вопросы современных исследований</title>         
+        <meta content="" name="description"> 
+        <meta content="Greenhouse Gas Fluxes: Key Trends in Modern Research" property="og:site_name"> 
+        <meta content="Greenhouse Gas Fluxes: Key Trends in Modern Research" property="og:title"> 
+        <meta content="" property="og:description"> 
+        <meta content="website" property="og:type"> 
+        <link href="../assets/main.css" rel="stylesheet"> 
+        <link href="https://github.com/" rel="preconnect"> 
+        <style>/* cyrillic-ext */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 500; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; } /* cyrillic */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 500; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; } /* vietnamese */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 500; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; } /* latin-ext */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 500; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WdhyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 500; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTn89ddpQ.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* cyrillic-ext */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; } /* cyrillic */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; } /* vietnamese */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; } /* latin-ext */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WdhyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTn89ddpQ.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* cyrillic-ext */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; } /* cyrillic */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; } /* vietnamese */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; } /* latin-ext */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WdhyyTn89ddpROi.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTn89ddpQ.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* cyrillic-ext */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2'); unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; } /* cyrillic */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; } /* greek-ext */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2'); unicode-range: U+1F00-1FFF; } /* greek */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2'); unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF; } /* math */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2'); unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF; } /* symbols */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2'); unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF; } /* vietnamese */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; } /* latin-ext */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* cyrillic-ext */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2'); unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; } /* cyrillic */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; } /* greek-ext */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2'); unicode-range: U+1F00-1FFF; } /* greek */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2'); unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF; } /* math */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2'); unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF; } /* symbols */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2'); unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF; } /* vietnamese */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; } /* latin-ext */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* cyrillic-ext */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2'); unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; } /* cyrillic */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2'); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; } /* greek-ext */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2'); unicode-range: U+1F00-1FFF; } /* greek */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2'); unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF; } /* math */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2'); unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF; } /* symbols */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2'); unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF; } /* vietnamese */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2'); unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; } /* latin-ext */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url(https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }</style>         
+    </head>     
+    <body class="pb-4" style="padding-top: 76px;"> 
+        <header> 
+            <!-- navigation bar (web only): -->             
+            <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light mb-3"> 
+                <div class="container"> 
+                    <div class="navbar-brand navbar-logo mr-0 ml-1 text-left overflow-hidden"> 
+                        <a href=""> </a> 
+                    </div>                     
+                    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"> 
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>                     
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                        <ul class="navbar-nav"> 
+                            <li class="nav-item "> 
+                                <a class="nav-link" href="../en/schedule.html" title="English"><b>English</b></a> 
+                            </li>                             
+                            <li class="nav-item "> 
+                                <a class="nav-link" href="../ru/schedule.html" title="Русский"><b>Русский</b></a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                        <ul class="navbar-nav ml-auto"> 
+                            <li class="nav-item "> 
+                                <a class="nav-link" href="index.html" title="Main">Главная</a> 
+                            </li>                             
+                            <li class="nav-item "> 
+                                <a class="active nav-link" href="schedule.html" title="Schedule">Программа</a> 
+                            </li>                             
+                            <li class="nav-item "> 
+                                <a class="nav-link" href="location.html" title="Location">Расположение</a> 
+                            </li>                             
+                            <li class="nav-item "> 
+                                <a class="nav-link" href="registration.html" title="Register">Регистрация<br></a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
+            </nav>             
+            <script>
 		// Change colour of header and logo
 		window.addEventListener('scroll', function() {
 			const navbar = document.querySelector('.navbar');
@@ -513,8 +68,8 @@
 				// logo.src = '/assets/images/logo.png';
 			}
 		});
-    </script>
-    <script>
+    </script>             
+            <script>
 		// Adjust height for fixed-navbar
 		function adjustBodyPadding() {
 			const navbar = document.querySelector('.navbar');
@@ -527,8 +82,8 @@
 		// Adjust on load and on resize
 		window.addEventListener('load', adjustBodyPadding);
 		window.addEventListener('resize', adjustBodyPadding);
-    </script>
-    <!--
+    </script>             
+            <!--
 <script>
 // Position the notifications below the navbar
 function positionInfoBarContainer() {
@@ -544,17 +99,17 @@ infoBarContainer.style.top = navbarHeight + 'px';
 window.addEventListener('load', positionInfoBarContainer);
 window.addEventListener('resize', positionInfoBarContainer);
 </script>
--->
-    <!-- Show the introduction banner: -->
-    <div class="container-fluid p-0"></div>
-</header>
-<div class="page-wrapper">
-    <main class="container">
-        <div class="fixed-bottom w-100 d-flex justify-content-end px-3" id="info-bar-container" style="z-index: 1040;">
-            <div class="alerts-container d-flex flex-column align-items-end"></div>
-        </div>
-        <br>
-        <!--
+-->             
+            <!-- Show the introduction banner: -->             
+            <div class="container-fluid p-0"></div>             
+        </header>         
+        <div class="page-wrapper"> 
+            <main class="container"> 
+                <div class="fixed-bottom w-100 d-flex justify-content-end px-3" id="info-bar-container" style="z-index: 1040;"> 
+                    <div class="alerts-container d-flex flex-column align-items-end"></div>                     
+                </div>                 
+                <br> 
+                <!--
 <div class="alert alert-primary alert-dismissible fade show" role="alert">
   <h4 class="alert-heading">List of Accepted Papers available now!</h4>
 
@@ -566,9 +121,9 @@ window.addEventListener('resize', positionInfoBarContainer);
 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
   <span aria-hidden="true">&times;</span>
 </button>
-</div>-->
-        <div class="jumbotron">
-            <!--
+</div>-->                 
+                <div class="jumbotron"> 
+                    <!--
 <h1 class="display-3 text-break">
 
 eco-2026
@@ -578,31 +133,767 @@ eco-2026
 
 
 <hr class="my-4">
--->
-            <h4 id="topics-of-interest">Предварительная программа Конференции и Школы</h4>
-            <ul>
-                <li>12&#8211;13.08 &#8211; конференция &laquo;Потоки парниковых газов: актуальные вопросы современных исследований&raquo; (ИПЭЭ)
-                </li>
-                <li>14.08 &#8211; трансфер на автобусе участников Конференции и Школы в Центрально-Лесной заповедник (ИПЭЭ &rarr; ЦЛЗ, 6ч)
-                </li>
-                <li>15.08 &#8211; полевой семинар в Заповеднике с посещением по группам четырех эколого-климатических станций и экологической тропы по типичным южнотаежным ландшафтам Заповедника. (ЦЛЗ)
-                </li>
-                <li>16.08 &#8211; трансфер участников Конференции, не остающихся на полевую школу, в Москву (ЦЛЗ &rarr; МСК)
-                </li>
-                <li>16.08&#8211;19.08 &#8211; образовательная программа для участников Школы: лекции, семинары, полевые исследования (ЦЛЗ)
-                </li>
-                <li>19.08 &#8211; подготовка презентаций по результатам работы Школы по группам, выполнение аттестационных заданий (ЦЛЗ)
-                </li>
-                <li>20.08 &#8211; трансфер участников Школы в Москву (ЦЛЗ &rarr; МСК)</li>
-                <p></p>
-                <p>
-                    <b>ИПЭЭ</b>: Институт проблем экологии и эволюции им. А.Н. Северцова РАН, г. Москва, Ленинский проспект, 33<br><b>ЦЛЗ</b>: Центрально-Лесной заповедник, Тверская обл., Нелидовский район, пос. Заповедный
-                </p>
-            </ul>
-            <p>Участие в Конференции 12&#8211;13.08 возможно в очном или онлайн-формате.
-                <br>Для полевой Школы 14&#8211;20.08 предусмотрено только очное участие.</p>
-            <hr class="my-4">
-            <!--
+-->                     
+                    <h4 id="topics-of-interest">Программа Конференции и Школы</h4> 
+                    <ul> 
+                        <li>12&#8211;13.08 &#8211; конференция &laquo;Потоки парниковых газов: актуальные вопросы современных исследований&raquo; (ИПЭЭ)
+</li>                         
+                        <li>14.08 &#8211; трансфер на автобусе участников Конференции и Школы в Центрально-Лесной заповедник (ИПЭЭ &rarr; ЦЛЗ, 6ч)
+</li>                         
+                        <li>15.08 &#8211; полевой семинар в Заповеднике с посещением по группам четырех эколого-климатических станций и экологической тропы по типичным южнотаежным ландшафтам Заповедника. (ЦЛЗ)
+</li>                         
+                        <li>16.08 &#8211; трансфер участников Конференции, не остающихся на полевую школу, в Москву (ЦЛЗ &rarr; МСК)
+</li>                         
+                        <li>16.08&#8211;19.08 &#8211; образовательная программа для участников Школы: лекции, семинары, полевые исследования (ЦЛЗ)
+</li>                         
+                        <li>19.08 &#8211; подготовка презентаций по результатам работы Школы по группам, выполнение аттестационных заданий (ЦЛЗ)
+</li>                         
+                        <li>20.08 &#8211; трансфер участников Школы в Москву (ЦЛЗ &rarr; МСК)</li>                         
+                        <p></p> 
+                        <p> <b>ИПЭЭ</b>: Институт проблем экологии и эволюции им. А.Н. Северцова РАН, г. Москва, Ленинский проспект, 33<br><b>ЦЛЗ</b>: Центрально-Лесной заповедник, Тверская обл., Нелидовский район, пос. Заповедный </p> 
+                    </ul>                     
+                    <p>Участие в Конференции 12&#8211;13.08 возможно в очном или онлайн-формате. <br>Для полевой Школы 14&#8211;20.08 предусмотрено только очное участие.</p> 
+                    <hr class="my-4">
+                    <h4 id="topics-of-interest">Программа Конференции 12-13 августа</h4>
+                    <div class="syncscroll overflow-y-hidden" name="sync-table" style="background-color: #ffffff;"> 
+                        <table class="table mx-auto"> 
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"> <h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">12 АВГУСТА 2026</h4><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location">ИПЭЭ РАН, г. Москва, Ленинский проспект, 33, Актовый зал</p> </td> 
+                            </tbody>
+                            <tbody> 
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-right" style="z-index: 999"><b>9:30-10:00</b></th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p class="mb-2">Регистрация участников</p> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-right" style="z-index: 999"><b>10:00-10:10</b></th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p class="mb-2">Открытие конференции, приветствие участников</p> </td>
+                                </tr>                                 
+                            </tbody>
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"> <h5 id="topics-of-interest" style="margin-left: 10px;/* text-align: center *//* background-color: #e2f0d9 */" class="room-date">Секция &quot;Пространственное масштабирование оценок потоков парниковых газов&quot;</h5> <p id="topics-of-interest" style="/* text-align: center */font-style: italic;margin-left: 10px;" class="room-location">Модератор: Ольчев Александр Валентинович</p></td> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">10:10-10:30</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Ольчев Александр Валентинович</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden"><p>Современные подходы к оценке потоков СО<sub>2</sub>&nbsp;<span style="font-size: 1rem;">и CH<sub>4</sub> в наземных и океанических экосистемах&nbsp;</span><span style="font-size: 1rem;">в условиях климатических изменений</span></p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right font-weight-normal" style="z-index: 999">10:30-10:50</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Максимов Трофим Христофорович</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Могут ли репрезентативные экосистемы криолитозоны России претендовать на национального донора углеродных единиц: научные результаты и перспективы</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right font-weight-normal" style="z-index: 999">10:50-11:10</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Nguyen Hai-Hoa et al.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Estimating mangrove aboveground biomass in northen coast of Vietnam: integrating field measurements and remote sensing</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right font-weight-normal" style="z-index: 999">11:10-11:30</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Pramit Kumar Deb Burman</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">An overview of biosphere-atmosphere exchanges of carbon, water and energy in South Asia</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right font-weight-normal" style="z-index: 999">11:30-11:45</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Шабанов Николай Владимирович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">On calibration of remote sensing retrievals of ecosystem respiration (Reco) with tower measurements over Russian forests and wetlands</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right font-weight-normal" style="z-index: 999">11:45-12:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Сандлерский Роберт Борисович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Репрезентативность размещения ЭКС на основе геоданных: машинное обучение или районирование?</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right font-weight-normal" style="z-index: 999">12:00-12:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Орлов Тимофей Владимирович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Ландшафтный подход к масштабированию оценок потоков парниковых газов на нарушенных торфяниках</td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-right" style="z-index: 999">12:15-12:35</th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p class="mb-2"><i>☕ Кофе-брейк. Малый конференц-зал ИПЭЭ</i></p> </td>
+                                </tr>
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"> <h5 id="topics-of-interest" style="margin-left: 10px;/* text-align: center *//* background-color: #e2f0d9 */" class="room-date">Секция &quot;Камерные методы наблюдений в исследованиях парниковых газов: вопросы методологии, результаты мониторинга&quot;</h5> <p id="topics-of-interest" style="/* text-align: center */font-style: italic;margin-left: 10px;" class="room-location">Модератор: Курганова Ирина Николаевна</p></td>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">12:35-12:55</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Курганова Ирина Николаевна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Эмиссия СО<sub>2</sub> из почв южного Подмосковья: межгодовая, сезонная и пространственная вариабельность</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">12:55-13:10</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Кулачкова Светлана Александровна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Сезонная и межгодовая изменчивость потоков парниковых газов из естественных и агропочв на карбоновом полигоне Московской обл. «Чашниково»</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:10-13:25</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Мошкина Елена Викторовна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Анализ пространственно-временной изменчивости почвенного дыхания и расчет нетто-баланса углерода в лесных экосистемах средней тайги Карелии</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:25-13:40</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Прокопюк Виктория Михайловна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Суточная и сезонная динамика экосистемного дыхания олиготрофного болота по данным камерного метода</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:40-13:55</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Мигловец Михаил Николаевич</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Временная и пространственная изменчивость эмиссии метана в топяных сообществах таёжных болот республики Коми</td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-muted text-right" style="z-index: 999">13:55-15:00</th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p class="mb-2"><i>🍽️ Обед. Корчма &laquo;Тарас Бульба&raquo;, Ленинский проспект, 37</i></p> </td>
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:00-15:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Лопес де Гереню Валентин Овидиович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Зимняя эмиссия диоксида углерода из почв: методические аспекты и результаты многолетнего мониторинга в регионе южного Подмосковья</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:15-15:30</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Хорошаев Дмитрий Александрович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Гетеротрофное дыхание почвы: результаты мониторинга и возможность разработки комплексной методологии</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:30-15:45</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Придача Владислава Борисовна</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Камерные измерения фотосинтеза бореальных деревьев: температурная зависимость и отклик на свет и СО<sub>2</sub></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:45-16:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Харисов Денис Рамилевич и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Влияние лесохозяйственных мероприятий на углеродный баланс напочвенного покрова в постагрогенных березовых лесах</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">16:00-16:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Черных Полина Владимировна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Сезонная динамика эмиссии СО<sub>2</sub> из почв референтного сосняка и свежей гари в боровых ландшафтах левобережных надпойменных террас р. Воронеж</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">16:15-16:30</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Бахтин Андрей Михайлович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Динамика потоков углекислого газа и метана из черноземов в экотоне «лесная полоса – пашня» в южной лесостепи</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">16:30-16:45</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Сат Артыш Алашович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Потоки СО<sub>2</sub> на грядах и мочажинах Бакчарского болота: сезонная и суточная динамика, погода и гидрология</td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-muted text-right" style="z-index: 999">16:45-17:00</th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p>Дискуссия</p> </td>
+                                </tr>                                 
+                            </tbody>
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"> <h5 id="topics-of-interest" style="margin-left: 10px;/* text-align: center *//* background-color: #e2f0d9 */" class="room-date">Постерная сессия всех секций</h5> </td> 
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:00-17:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"><p class="mb-2">Парамонов Михаил Сергеевич и др. </p></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Взаимосвязь структуры сообществ раковинных амёб и эмиссии парниковых газов</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:00-17:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Зубова Мария Евгеньевна и
+др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Сезонная изменчивость потоков тепла, СО<sub>2</sub> и метана на олиготорофном болоте южной тайги</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:00-17:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Василенко Демид Викторович
+и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Разработка методов интеграции измерительных систем эколого-климатических станций и данных дистанционного зондирования на примере Центрально-Лесного заповедника</td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:00-17:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Моченов Семен Юрьевич и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Оценка репрезентативности результатов ручных измерений потоков СО<sub>2</sub> и CH<sub>4</sub> на основе данных высокочастотного мониторинга</td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-muted text-right" style="z-index: 999">17:15-19:00</th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p class="mb-2"><i>🥂 Фуршет. Малый конференц-зал ИПЭЭ</i></p> </td>
+                                </tr>                                 
+                            </tbody>
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"> <h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">13 АВГУСТА 2026</h4><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location">ИПЭЭ РАН, г. Москва, Ленинский проспект, 33, Актовый зал</p> </td> 
+                            </tbody>
+                            <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"> <h5 id="topics-of-interest" style="margin-left: 10px;/* text-align: center *//* background-color: #e2f0d9 */" class="room-date">Секция "Моделирование потоков парниковых газов"</h5> <p id="topics-of-interest" style="/* text-align: center */font-style: italic;margin-left: 10px;" class="room-location">Модератор: Куричева Ольга Алексеевна</p></td>
+                            <tbody> 
+                                <tr>
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">09:00-09:20</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Степаненко Виктор Михайлович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">К новому поколению моделей углеродного цикла суши</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">09:20-09:35</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Мухартова Юлия Вячеславовна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Физически обоснованный инверсионный алгоритм оценки потоков парниковых газов над неоднородной подстилающей поверхностью</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">09:35-09:50</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Siqi Li et al.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Development & validation of CNMM-DNDC on GHG and other variables – a high-resolution hydro-biogeochemical model potentially commonly applicable for terrestrial ecosystems</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">09:50-10:05</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Нариманидзе Анна Александровна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Моделирование пространственной изменчивости потоков диоксида углерода над неоднородной подстилающей поверхностью в условиях средней тайги</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">10:05-10:20</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Согачев Андрей Федорович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Оценка пространственного футпринта наземных измерений методом вихревой ковариации для эколого-климатических станций</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">10:20-10:35</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Припутина Ирина Владимировна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Неопределённости при сравнении результатов моделирования потоков С-СО<sub>2</sub> из лесных почв и данных полевых измерений</td> 
+                                </tr>                                 
+                            </tbody>
+                            <tbody data-pg-tree-id="749">
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"> <h5 id="topics-of-interest" style="margin-left: 10px;/* text-align: center *//* background-color: #e2f0d9 */" class="room-date">Секция "Результаты измерений экосистемных потоков парниковых газов"</h5> <p id="topics-of-interest" style="/* text-align: center */font-style: italic;margin-left: 10px;" class="room-location">Модератор: Курбатова Юлия Александровна</p></td>
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">10:35-10:55</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Замолодчиков Дмитрий Геннадьевич и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Углеродный обмен в меняющейся экосистеме: гибель и восстановление южнотаежного ельника</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">10:55-11:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Загирова Светлана Витальевна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Использование ресурсов окружающей среды на валовой фотосинтез в ельнике черничном и сосняке бруснично-лишайниковом среднетаёжной подзоны</td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-right" style="z-index: 999">11:15-11:35</th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p class="mb-2"><i>☕ Кофе-брейк. Малый конференц-зал ИПЭЭ</i></p> </td>
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">11:35-11:55</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Gnanamoorthy Palingamoorthy et al.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Vegetation shifts drive drought-induced changes in carbon, water, and energy fluxes in a savanna ecosystem</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">11:55-12:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Mukherjee Sandipan et al.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Carbon Sinks of the Central Himalaya: Flux Dynamics of Chir-Pine and Banj-Oak Forests</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">12:15-12:30</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Дюкарев Егор Анатольевич и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Потоки тепла, влаги и парниковых газов по данным пульсационных наблюдений на стационаре Мухрино</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">12:30-12:50</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Куричева Ольга Алексеевна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Несоответствие годовых сумм чистого обмена СО<sub>2</sub> экосистем с атмосферой на эколого-климатических станциях теориям экосистемного метаболизма</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">12:50-13:05</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Колотыгина Виктория Николаевна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Сезонная динамика и годовой баланс потоков СО<sub>2</sub> и CH<sub>4</sub> с поверхности мелководного эвтрофного озера Зап. Сибири по данным метода турбулентных пульсаций</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:05-13:20</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Горбаренко Елизавета Михайловна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Влияние аномальных температур и осадков на потоки диоксида углерода в наземных экосистемах</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:20-13:35</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Широких Павел Сергеевич и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Нетто-экосистемный обмен в луговой степи Башкирского Предуралья по данным двухлетних измерений методом турбулентных пульсаций</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:35-13:50</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Мамадиев Нурдин Аликович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Выбросы и поглощение парниковых газов в ключевых ландшафтах карбонового полигона Чеченской республики</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:50-14:05</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Мячина Ксения Викторовна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Оценка эмиссии диоксида углерода в степных ландшафтах Юж. Приуралья (Оренбургская обл.)</td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-right" style="z-index: 999">14:05-15:00</th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p class="mb-2"><i>🍽️ Обед. Корчма &laquo;Тарас Бульба&raquo;, Ленинский проспект, 37</i></p> </td>
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:00-15:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Кивалов Сергей Николаевич и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Два года измерений на лесозарастающей залежи - углеродный баланс экосистемы и оценка вклада неоднородности в сравнение дыхания экосистемы и почвы</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:15-15:30</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Фока Стефани Чарльзовна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Анализ пульсационных измерений потоков СО<sub>2</sub> на станции атмосферного мониторинга СПБГУ в пригороде Санкт-Петербурга</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:30-15:45</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Хорошилов Юрий Александрович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Результаты измерений потока углекислого газа на морской части карбонового полигона «Геленджик» в 2024 году</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:45-16:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Бабаянц Геннадий Иванович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Потоки парниковых газов с осушенного торфяника в южно-таежной подзоне Европейской территории России</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">16:00-16:15</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Подрезова Юлия Андреевна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Обмен диоксида углерода в сосновом лесу Усманского бора Центральной лесостепи осенью 2025 г.</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">16:15-16:30</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Борисов Михаил Николаевич и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Углеродный баланс зимой 2025-2026 гг. в старовозрастном сосновом лесу Усманского бора Центральной лесостепи</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">16:30-16:45</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Суховеева Ольга Эдуардовна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Баланс углерода в лесостепном агроландшафте: первые результаты работы ЭКС на Курском стационаре Института географии РАН</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">16:45-17:05</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Мамкин Вадим Витальевич и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Инициатива RUFLUX 2027: продукт на основе данных эколого-климатических станций России</td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-right" style="z-index: 999">17:05-17:25</th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p class="mb-2"><i>☕ Кофе-брейк. Малый конференц-зал ИПЭЭ</i></p> </td>
+                                </tr>                                 
+                            </tbody>
+                            <tbody data-pg-tree-id="749">
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"> <h5 id="topics-of-interest" style="margin-left: 10px;/* text-align: center *//* background-color: #e2f0d9 */" class="room-date">Круглый стол &laquo;Использование измерений потоков парниковых газов для практических приложений&raquo;</h5> <p id="topics-of-interest" style="/* text-align: center */font-style: italic;margin-left: 10px;" class="room-location">Модератор: Мамкин Вадим Витальевич</p></td>
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:25-17:40</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Шахматов Кирилл Леонидович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Методологические аспекты климатических проектов по обводнению торфяников (ГОСТ Р 72560-2026)</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:40-17:55</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Шахматов Кирилл Леонидович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Опыт подготовки и реализации первого климатического проекта по обводнению торфяника «Оршинский мох» (Тверская область)</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:55-18:10</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Фурса Юрий Владимирович и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Потоки парниковых газов на территории климатического проекта по вторичному обводнению осушенного торфяного месторождения "Оршинский мох" (Тверская область)</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">18:10-18:25</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Коротков Владимир Николаевич и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Оценка баланса парниковых газов в управляемых экосистемах: методические особенности и нерешенные задачи в национальном кадастре парниковых газов</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">18:25-18:40</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"> <p class="mb-2">Медведева Мария Андреевна и др.</p> </td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden">Снижение потоков парниковых газов путем обводнения осушенных торфяников</td> 
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-title font-weight-normal text-right" style="z-index: 999">18:40-19:00</th>
+                                    <td class="col-space p-0"></td>
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 998" colspan="2"> <p class="mb-2"><i>Заключительная дискуссия, подведение итогов</i></p> </td>
+                                </tr>
+                            </tbody>                             
+                        </table>
+                        <tbody data-pg-tree-id="1321"></tbody>                         
+                    </div>
+                    <hr class="my-4">
+                    <h4 id="topics-of-interest">Программа Школы 14-20 августа</h4>
+                    <div class="syncscroll overflow-y-hidden" name="sync-table" style="background-color: #ffffff;"> 
+                        <table class="table mx-auto"> 
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"><h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">14 АВГУСТА 2026, ПОЛЕВОЙ СЕМИНАР И ШКОЛА</h4><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location">г. Москва &#8211; г. Ржев &#8211; г. Нелидово &#8211; пос. Заповедный (Центрально-Лесной заповедник)</p><p id="topics-of-interest">Полевой семинар: прибытие в Центрально-Лесной заповедник</p><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location"></p></td> 
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">10:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Отъезд из Москвы на автобусе</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:00-14:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Остановка на обед</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">16:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Прибытие в Центрально-Лесной заповедник (Тверская обл.,
+Нелидовский район, пос. Заповедный)</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">16:00-17:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Размещение участников в пос. Заповедный</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:00-19:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Банкет</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">19:00-21:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Культурная программа</p></td> 
+                                </tr>
+                                <tr data-pg-tree-id="1427"></tr>                                 
+                            </tbody>                             
+                        </table>
+                        <table class="table mx-auto"> 
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"><h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">15 АВГУСТА 2026, ПОЛЕВОЙ СЕМИНАР И ШКОЛА</h4><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location">Центрально-Лесной заповедник</p><p id="topics-of-interest">Полевой семинар: Центрально-Лесной заповедник</p><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location"></p></td> 
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">8:00-9:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Завтрак</p><p class="mb-2"></p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">9:00-15:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Экскурсия на болото &quot;Старосельский мох&quot;, посещение эколого-климатической станции на болоте (Fy4), выход к дер. Падоры, посещение
+эколого-климатической станции на вырубке (Fy3)</p><p class="mb-2"></p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:00-18:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Группа участников семинара посещает эколого-климатическую станцию
+в ельнике черничном сфагновом (Fyo).
+Группа участников школы посещает музеи и экологические тропы
+Заповедника</p><p class="mb-2"></p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">18:00-19:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Ужин</p><p class="mb-2"></p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">19:00-21:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Культурная программа</p><p class="mb-2"></p></td> 
+                                </tr>
+                                <tr data-pg-tree-id="1427"></tr>                                 
+                            </tbody>                             
+                        </table>
+                        <table class="table mx-auto"> 
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"><h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">16 АВГУСТА 2026, УЧАСТНИКИ ПОЛЕВОГО СЕМИНАРА</h4><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location">Пос. Заповедный (Центрально-Лесной заповедник) &#8211; г. Нелидово &#8211; г. Зубцов &#8211; г. Москва</p><p id="topics-of-interest">Полевой семинар: отъезд из Центрально-Лесного заповедника</p><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location"></p></td> 
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">8:00-9:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Завтрак</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">9:00-10:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Сборы</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">10:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Отъезд участников полевого семинара, не остающихся на полевую
+школу, из Центрально-Лесного заповедника на автобусе в Москву</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:00-14:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Остановка на обед</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Прибытие в Москву</p></td> 
+                                </tr>
+                                <tr data-pg-tree-id="1427"></tr>                                 
+                            </tbody>                             
+                        </table>
+                        <table class="table mx-auto"> 
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"><h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">16 АВГУСТА 2026, УЧАСТНИКИ ПОЛЕВОЙ ШКОЛЫ</h4><p id="topics-of-interest">Полевая школа: учебная программа в Центрально-Лесном заповеднике</p><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location"></p></td> 
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">8:00-9:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Завтрак</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">9:00-9:30</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Лекция Трофима Христофоровича Максимова</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">09:30-13:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Вводная лекция и семинар по направлению &quot;Обработка данных эколого-климатических станций, уровни 0-2: первичные данные, расчет потоков</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:00-14:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Обед</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">14:00-14:30</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Лекция Юлии Александровны Курбатовой</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">14:30-18:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Вводная лекция и семинар по направлению &quot;Получение первичных
+данных эколого-климатической станции: принципы работы систем
+экологического мониторинга, конфигурация и поддержание
+измерительных комплексов&quot;</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">18:00-19:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Ужин</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">19:00-21:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Научное знакомство: рассказы об исследованиях научных коллективов
+участников школы</p></td> 
+                                </tr>
+                                <tr data-pg-tree-id="1427"></tr>                                 
+                            </tbody>                             
+                        </table>
+                        <table class="table mx-auto"> 
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"><h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">17 АВГУСТА 2026, ПОЛЕВАЯ ШКОЛА</h4><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location">Центрально-Лесной заповедник</p><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location"></p></td> 
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">8:00-9:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Завтрак</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">9:00-10:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Лекция Владимира Николаевича Короткова</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">10:00-13:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Вводная лекция и семинар по направлению &quot;Обработка данных эколого-климатических станций, уровни 3-4: фильтрация, заполнение,
+интерпретация&quot;.</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:00-14:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Обед</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">14:00-15:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Лекция Анатолия Станиславовича Прокушкина</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:00-18:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Вводная лекция и семинар по направлению &quot;Камерные измерения
+потоков парниковых газов&quot;.</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">18:00-19:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Ужин</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">19:00-21:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Культурная программа</p></td> 
+                                </tr>
+                                <tr data-pg-tree-id="1427"></tr>                                 
+                            </tbody>                             
+                        </table>
+                        <table class="table mx-auto"> 
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"><h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">18 АВГУСТА 2026, ПОЛЕВАЯ ШКОЛА</h4><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location">Центрально-Лесной заповедник</p><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location"></p></td> 
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">8:00-9:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Завтрак</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">9:00-14:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Пешеходная экскурсия на эколого-климатические станции в ельнике
+черничном сфагновом (Fyo) и ельнике сложном (Fy2)</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">14:00-15:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Обед</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">15:00-18:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Работа по выбранным участниками направлениям</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">18:00-19:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Ужин</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">19:00-21:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Культурная программа</p></td> 
+                                </tr>
+                                <tr data-pg-tree-id="1427"></tr>                                 
+                            </tbody>                             
+                        </table>
+                        <table class="table mx-auto"> 
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"><h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">19 АВГУСТА 2026, ПОЛЕВАЯ ШКОЛА</h4><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location">Центрально-Лесной заповедник</p><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location"></p></td> 
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">8:00-9:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Завтрак</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">9:00-13:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Работа по выбранным участниками направлениям</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:00-14:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Обед</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">14:00-17:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Подготовка итоговых презентаций по направлениям</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:00-18:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Отчетная мини-конференция</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">18:00-19:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Ужин</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">19:00-21:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Культурная программа</p></td> 
+                                </tr>
+                                <tr data-pg-tree-id="1427"></tr>                                 
+                            </tbody>                             
+                        </table>
+                        <table class="table mx-auto"> 
+                            <tbody> 
+                                <td colspan="4" style="background-color: white;border-left: solid 6px #cce3bd;"><h4 id="topics-of-interest" style="margin-left: 10px;text-align: center;/* background-color: #e2f0d9 */" class="room-date">20 АВГУСТА 2026, ПОЛЕВАЯ ШКОЛА</h4><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location">Пос. Заповедный (Центрально-Лесной заповедник) &#8211; г. Нелидово &#8211; г. Зубцов &#8211; г. Москва</p><p id="topics-of-interest">Полевая школа: отъезд из Центрально-Лесного заповедника</p><p id="topics-of-interest" style="text-align: center;font-style: italic;margin-left: 10px;" class="room-location"></p></td> 
+                            </tbody>
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">8:00-9:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Завтрак</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">9:00-10:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Сборы</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">10:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Отъезд участников полевой школы из Центрально-Лесного заповедника
+на автобусе в Москву</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">13:00-14:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Остановка на обед</p></td> 
+                                </tr>
+                                <tr> 
+                                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">17:00</th> 
+                                    <td class="col-space p-0"></td> 
+                                    <td class="alert alert- shadow-sm overflow-hidden" style="z-index: 996;border-left-width: 4px;border-left-color: #bee5eb;" colspan="2"><p class="mb-2">Прибытие в Москву</p></td> 
+                                </tr>
+                                <tr data-pg-tree-id="1427"></tr>                                 
+                            </tbody>                             
+                        </table>
+                        <tbody data-pg-tree-id="1321"></tbody>                         
+                    </div>                     
+                    <!--
 
 <div class="lead d-print-none">
 
@@ -615,66 +906,66 @@ eco-2026
 
 </p>
 
--->
-        </div>
-    </main>
-    <footer class="container"></footer>
-    <!--  
--->
-    <section class="sponsor-banner">
-        <div class="sponsor-grid">
-            <div class="sponsor-column">
-                <div class="sponsor-logos"></div>
-            </div>
-            <div class="sponsor-column">
-                <h5></h5>
-                <h5>Организаторы:</h5>
-                <div class="sponsor-logos">
+-->                     
+                </div>                 
+            </main>             
+            <footer class="container"></footer>             
+            <!--  
+-->             
+            <section class="sponsor-banner"> 
+                <div class="sponsor-grid"> 
+                    <div class="sponsor-column"> 
+                        <div class="sponsor-logos"></div>                         
+                    </div>                     
+                    <div class="sponsor-column"> 
+                        <h5></h5> 
+                        <h5>Организаторы:</h5> 
+                        <div class="sponsor-logos"> 
                             <a href="https://sev-in.ru/laboratoriya-biogeocenologii-im-vn-sukachyova"><img alt="IPEE" height="120" src="../assets/images/institutions/IPEE RAS Ru 120x120.svg" width="120" style="width: 90px;"></a> 
                             <a href="https://journals.rcsi.science/2587-5566/article/view/135600#:~:text=RuFlux%20network%20covers%20a%20wide,measurement%20network%2C%20ecoclimatic%20sites%2C%20monitoring"><img alt="RuFlux" height="120" src="../assets/images/institutions/Ruflux 120x120.svg" width="120" style="width: 80px;"></a> 
-                            <a href="https://clgz.ru/"><img height="120" src="../assets/images/institutions/CLGZ Ru 120x120.svg" width="120" alt="CLGZ"></a>
+                            <a href="https://clgz.ru/"><img height="120" src="../assets/images/institutions/CLGZ Ru 120x120.svg" width="120" alt="CLGZ"></a> 
                             <a href="https://soil.msu.ru/dopolnit-obrazovanie/kursy-dlya-spetsialistov-po-rabote-na-karbonovykh-poligonakh/3662-organizatsiya-i-provedenie-monitoringa-klimaticheski-aktivnykh-gazov-na-karbonovykh-poligonakh"><img alt="MSU" height="120" src="../assets/images/institutions/MSU 120x120.svg" width="120"></a> 
-                            <a href="https://geography.hse.ru/landecolab/news/science/"><img alt="HSE" height="120" src="../assets/images/institutions/HSE Ru 120x120.svg" width="120"></a>
-                </div>
-            </div>
-            <div class="sponsor-column">
+                            <a href="https://geography.hse.ru/landecolab/news/science/"><img alt="HSE" height="120" src="../assets/images/institutions/HSE Ru 120x120.svg" width="120"></a> 
+                        </div>                         
+                    </div>                     
+                    <div class="sponsor-column"> 
                         <h5></h5> 
                         <h5>Партнер:</h5> 
                         <div class="sponsor-logos"> 
                             <a href="https://datchiki.com/"><img alt="PlanetaInfo" height="120" src="../assets/images/institutions/PlanetInfo Ru 120x120.svg" width="120"></a> 
                         </div>                         
-            </div>
-        </div>
-        <br>
-        <div class="container text-center"></div>
-    </section>
-    <footer class="container"></footer>
-</div>
-<div aria-hidden="true" aria-labelledby="link-modal-label" class="modal fade" id="link-modal" role="dialog" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title" id="link-modal-label">
-                    <h3 class="mb-2 font-weight-light"></h3>
-                    <h5 class="mb-0 font-weight-light"></h5>
-                </div>
-                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body embed-responsive embed-responsive-16by9">
-                <iframe allowfullscreen="" class="embed-responsive-item" src=""></iframe>
-            </div>
-            <div class="modal-footer justify-content-start">
-                <p></p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Append build time to avoid caching of live program embedded in JavaScript file -->
-<script src="../assets/main.js"></script>
-<div id="wot-new-assistant-container">
-    <div data-reactroot=""></div>
-</div>
-</body>
+                    </div>                     
+                </div>                 
+                <br> 
+                <div class="container text-center"></div>                 
+            </section>             
+            <footer class="container"></footer>             
+        </div>         
+        <div aria-hidden="true" aria-labelledby="link-modal-label" class="modal fade" id="link-modal" role="dialog" tabindex="-1"> 
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document"> 
+                <div class="modal-content"> 
+                    <div class="modal-header"> 
+                        <div class="modal-title" id="link-modal-label"> 
+                            <h3 class="mb-2 font-weight-light"></h3> 
+                            <h5 class="mb-0 font-weight-light"></h5> 
+                        </div>                         
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button"> 
+                            <span aria-hidden="true">×</span> 
+                        </button>                         
+                    </div>                     
+                    <div class="modal-body embed-responsive embed-responsive-16by9"> 
+                        <iframe allowfullscreen="" class="embed-responsive-item" src=""></iframe>                         
+                    </div>                     
+                    <div class="modal-footer justify-content-start"> 
+                        <p></p> 
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <!-- Append build time to avoid caching of live program embedded in JavaScript file -->         
+        <script src="../assets/main.js"></script>         
+        <div id="wot-new-assistant-container"> 
+            <div data-reactroot=""></div>             
+        </div>         
+    </body>     
 </html>

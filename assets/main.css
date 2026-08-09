@@ -18208,7 +18208,8 @@ main {
 a.nav.link.active {
 }
 
-sch-header {
-    background-color: white;
-    border-left: solid 4px #cce3bd;
+
+.section-name {
+	background-color: white;
+    border-left: solid 6px #cce3bd;
 }

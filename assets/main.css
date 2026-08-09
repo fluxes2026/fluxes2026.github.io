@@ -1834,6 +1834,13 @@ pre code {
     border-top: 1px solid #dee2e6;
 }
 
+@media (max-width:575px) {
+    .table th,
+    .table td {
+        padding: 0.5rem;
+    }
+}
+
 .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
@@ -17966,7 +17973,7 @@ main.container img {
 
 .table th.col-title,
 .table td.col-title {
-    width: clamp(40px, 12em, 12em);
+    width: clamp(40px, 12vw, 20vw);
 
     /* min-width: 50px */
 }
@@ -18208,8 +18215,7 @@ main {
 a.nav.link.active {
 }
 
-
 .section-name {
-	background-color: white;
+    background-color: white;
     border-left: solid 6px #cce3bd;
 }

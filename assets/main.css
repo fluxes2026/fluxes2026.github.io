@@ -1824,7 +1824,6 @@ pre code {
 .section-name {
     background-color: white;
     border-left: solid 6px #cce3bd;
-    margin-bottom: 0;
 }
 
 .table {
@@ -17944,7 +17943,7 @@ main.container img {
 }
 
 .table tbody tr:first-of-type > * {
-    border-top-width: 0px;
+    /* border-top-width: 0px */
 }
 
 .table th {

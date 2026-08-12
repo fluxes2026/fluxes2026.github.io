@@ -4440,6 +4440,7 @@ input[type="submit"].btn-block,
     }
 }
 
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -4453,8 +4454,7 @@ input[type="submit"].btn-block,
     padding: .5rem 1rem;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover,.nav-link:focus {
     text-decoration: none;
 }
 
@@ -18225,4 +18225,28 @@ a.nav.link.active {
 .room-date {
     margin-left: 10px;
     margin-top: 0.3em;
+}
+
+
+.abstract-link a {
+    display: inline-block;
+    flex-wrap: wrap;	
+    padding: 0.1em 0.8em;
+    border-radius: 0.4em;
+    background-color: rgba(141, 155, 247, 0.5);
+	text-color: rgba(141, 155, 247, 0.5);
+
+    /* button-like behavior */
+    text-decoration: none;
+
+}
+
+.abstract-link a:hover {
+    text-decoration: none;
+    background-color: rgba(141, 155, 247, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.abstract-link a:active {
+    box-shadow: none;
 }

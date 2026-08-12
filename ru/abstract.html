@@ -131,22 +131,20 @@ window.addEventListener('resize', positionInfoBarContainer);
                 </div>
                 <script>
 const params = new URLSearchParams(location.hash.substring(1));
-// const abstract_link = params.get('abstract');
-const abstract_name="OlchevAV.html"
-const abstract_valid = (/^[\w-]+\.html$/.test(abstract_name))
-abstract_link = "../abstracts/" + abstract_name
+const abstract_name = params.get('abstract');
+// const abstract_name="OlchevAV"
+const abstract_valid = (/^\p{L}+$/u.test(abstract_name))
+abstract_link = "../abstracts/" + abstract_name + ".html"
 if (abstract_link && abstract_valid) {
 
-    const iframe = document.getElementById('abstract-frame');
-
+const iframe = document.getElementById('abstract-frame');
 iframe.onload = () => {
     // const doc = iframe.contentDocument;
 	const doc = iframe.contentWindow.document
-	debugger;
+
     if (!doc) return;
 
     const resize = () => {
-	debugger;
         iframe.style.height = `${doc.documentElement.scrollHeight}px`;
     };
 

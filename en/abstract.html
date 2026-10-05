@@ -130,13 +130,27 @@ window.addEventListener('resize', positionInfoBarContainer);
 					</iframe>
                 </div>
                 <script>
-const params = new URLSearchParams(location.hash.substring(1));
+
+// support of legacy non indexed "abstract=OrlovTV"
+if (location.hash.startsWith('#abstract=')) {
+  const url = new URL(location.href);
+  url.search = location.hash.substring(1);
+  url.hash = '';
+  location.replace(url);   // replace() so Back doesn't loop
+}
+
+const params = new URLSearchParams(location.search);
 const abstract_name = params.get('abstract');
 // const abstract_name="OlchevAV"
 const abstract_valid = (/^\p{L}+$/u.test(abstract_name))
 
 if (abstract_name && abstract_valid) {
 const abstract_link = "../abstracts/" + abstract_name + ".html"
+
+if (!document.title.includes('|')) {
+	document.title = abstract_name + ' | ' + document.title;
+}
+
 const iframe = document.getElementById('abstract-frame');
 iframe.onload = () => {
     // const doc = iframe.contentDocument;
